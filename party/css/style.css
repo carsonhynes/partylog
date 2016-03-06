@@ -1,0 +1,74 @@
+
+body {
+	background-image: url("../img/party.png");
+	background-repeat: no-repeat;
+	width: 100%;
+	margin: 0px;
+}
+
+.main {
+	max-width: 340px;
+	margin: auto;
+	padding-top: 80px;
+	text-align: center;
+}
+
+.main form, .main div {
+	font-size: 20px;
+	display: inline-block;
+	margin: 0px;
+}
+
+.date, .main .beautiful-day, .ui-widget {
+	font-size: 22px;
+	margin-top: 8px !important;
+	margin-bottom:8px !important;
+	width: 100%;
+}
+
+.form-container {
+	padding:10px;
+	background-color: #ffffff;
+	box-shadow: 2px 2px 6px #222222;
+	border-radius: 5px;
+	margin-top: 100px !important;
+}
+
+.main .date {
+	font-size: 29px;
+}
+
+input:focus, select:focus {
+	box-shadow: 0px 0px 7px #33ccff;
+}
+
+button {
+	margin: 4px;
+	padding: 9px;
+	border-radius: 5px;
+}
+
+.button-ready {
+	background-color: #00bfff;
+	border-color: #33ccff;
+	box-shadow: 0px 0px 15px #33ccff;
+}
+
+input[type="text"], select {
+	box-shadow: 2px 2px 4px #222222;
+	padding: 7px;
+	padding-top: 8px;
+	border-radius: 4px;
+	border-color: #dedede;
+}
+
+input[type="text"] {
+	border-color: #ffffff;
+}
+
+.ui-widget label, .ui-widget select, 
+.ui-widget input {
+	text-align: left;
+	float: left;
+	width: 100% !important;
+}
