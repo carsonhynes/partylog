@@ -1,7 +1,19 @@
 <?php
 
-$mysqli = new mysqli("localhost", "root", "bacon", "PKPCastle");
+$server = "party.database.windows.net,1433";
+$db = "partylog";
+$user = "party";
+$password = "Bacon1234";
 
+try {
+	$conn = new PDO ( "sqlsrv:Server=tcp:.$server; Database =.$db; $user, $password" );
+	$conn->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
+}
+
+catch ( PDOException $e ) {
+	print( "Error connecting to SQL Server." );
+	die(print_r($e));
+}
 
 $q = "('";
 
@@ -25,7 +37,5 @@ else {
 }
 
 echo $q;
-
-$result = $mysqli->query("INSERT INTO party (name, fraternity, school, over) VALUES $q");
 
 //header("Location: index.php");
